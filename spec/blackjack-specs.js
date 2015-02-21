@@ -11,7 +11,7 @@ describe("Deck", function() {
       var testDeck = Object.create(Deck);
       testDeck.populate();
       testDeck.shuffle();
-      expect(["s", "h", "c", "d"]).to.contain(testDeck.cards[51].suit);
+      expect(["Spades", "Hearts", "Clubs", "Diamonds"]).to.contain(testDeck.cards[51].suit);
     });
   });
 });
