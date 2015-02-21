@@ -26,7 +26,7 @@ var Deck = {
   },
   shuffle: function() {
     for (var i = 52; i > 0; i--) {
-      var j = Math.random(0, i - 1);
+      var j = Math.round(Math.random() * i);
       var tempCard = this.cards[j];
       this.cards[j] = this.cards[i];
       this.cards[i] = tempCard;
